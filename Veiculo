@@ -1,1 +1,73 @@
+public class Veiculo{
 
+int cilindros,
+    numeroRodas,
+    potendia;
+
+String marca,
+       modelo;
+
+double preco;
+
+
+
+//começando metodos setters
+
+public void setCilindros(int cilindros){
+	this.cilindros = cilindros;
+}
+public void setNumeroRodas (int numeroRodas){
+	this.numeroRodas = numeroRodas;
+}
+public void setPotencia (int potencia){
+	this.potencia = potencia;
+}
+public void setMarca(String marca){
+	this.marca = marca;
+}
+public void setModelo(String modelo){
+	this.modelo = modelo;
+}
+public void setPreco(double preco){
+	this.preco=preco;
+}
+
+
+//começando os metodos getters
+
+
+public int getCilindros(){
+	return cilindros;
+}
+public int getNumeroRodas(){
+	return numeroRodas;
+}
+public int getPotencia(){
+	return potencia;
+}
+public String getMarca(){
+	return marca;
+}
+public String getModelo(){
+	return modelo;
+}
+public doule getPreco(){
+	return preco;
+}
+
+
+public void cadastrar(){
+
+
+}
+
+public void freiar(){
+
+
+}
+
+
+
+}
+
+}
