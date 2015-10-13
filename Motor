@@ -1,1 +1,94 @@
-# Trabalho
+package Classes;
+
+/**
+ *
+ * @author Leandro de oliveira antas
+ */
+public class Motor extends Veiculo {
+    
+    protected int potencia,
+                  rpmMaxima,
+                  rpm;
+    
+    protected String tipoCombustivel;
+            
+ 
+//construtor
+
+
+    
+//metodos setters
+    
+public void setPotencia (int potencia){
+    this.potencia = potencia;
+}
+
+public void setRpmMaxima (int rpmMaxima){
+    this.rpmMaxima = rpmMaxima;
+}
+
+public void setRpm (int rpm){
+    this.rpm = rpm;
+}
+
+public void setTipoCombustivel(String tipoCombustivel){
+    this.tipoCombustivel = tipoCombustivel;
+}
+
+
+//metodos getters
+
+public int getPotencia(){
+    return potencia;
+}
+
+public int getRpmMaxima(){
+    return rpmMaxima;
+}
+
+public int getRpm(){
+    return rpm;
+}
+
+public String getTipoCombustivel(){
+    return tipoCombustivel;
+}
+    
+       
+ //métodos da classe   
+    
+     @Override
+ public void cadastrar(){
+    super.cadastrar();
+    
+}   
+    
+ public void imprimir(){
+    System.out.println("Marca:" + getMarca() +
+                       "\n Modelo:" + getModelo() +
+                       "\n Potencia:" + getPotencia() +
+                       "\n Rpm maxima" + getRpmMaxima() +
+                       "\n Rpm:" + getRpm() +
+                       "\n Tipo Combustivel:" + getTipoCombustivel() 
+                      );    
+}
+            
+ public void acelerar(){
+ 
+    if(rpm < rpmMaxima) {
+
+    rpm += 100;
+}
+}
+ 
+public void desacelerar(){
+
+    if(rpm > 0) {
+
+    rpm -= 100;
+}
+}
+
+ 
+    
+}
