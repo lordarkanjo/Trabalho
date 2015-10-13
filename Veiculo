@@ -1,59 +1,89 @@
-public class Veiculo{
+package Classes;
 
-int cilindros,
-    numeroRodas,
-    potendia;
+/**
+ *
+ * @author Leandro de oliveira antas
+ */
+public class Veiculo {
+    
+    
+protected int numeroPassageiros,
+            velocidadeMaxima;
 
-String marca,
-       modelo;
+protected String marca,
+               modelo,
+               identificacao;
 
-double preco;
+protected double preco;
 
+//instanciar novo motor
+//construtores
 
-
-//começando metodos setters
-
-public void setCilindros(int cilindros){
-	this.cilindros = cilindros;
+public Veiculo(String marca, String modelo){
+    this.marca = marca;
+    this.modelo = modelo;
 }
-public void setNumeroRodas (int numeroRodas){
-	this.numeroRodas = numeroRodas;
-}
-public void setPotencia (int potencia){
-	this.potencia = potencia;
-}
-public void setMarca(String marca){
-	this.marca = marca;
-}
-public void setModelo(String modelo){
-	this.modelo = modelo;
-}
-public void setPreco(double preco){
-	this.preco=preco;
+
+public Veiculo(int numeroPassageiros,int velocidadeMaxima ){
+    this.numeroPassageiros = numeroPassageiros;
+    this.velocidadeMaxima = velocidadeMaxima;
 }
 
 
-//começando os metodos getters
 
 
-public int getCilindros(){
-	return cilindros;
-}
-public int getNumeroRodas(){
-	return numeroRodas;
-}
-public int getPotencia(){
-	return potencia;
-}
-public String getMarca(){
-	return marca;
-}
-public String getModelo(){
-	return modelo;
-}
-public doule getPreco(){
-	return preco;
-}
+ // inico dos métodos setters
+    public void setNumeroPassageiros(int numeroPassageiros){
+        this.numeroPassageiros = numeroPassageiros;
+    }
+    
+    public void setVelocidadeMaxima(int velocidadeMaxima){
+        this.velocidadeMaxima = velocidadeMaxima;
+    }
+       
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+    
+    public void setModelo(String modelo){
+        this.modelo = modelo;
+    }
+    
+    public void setIdentificacao(String identificacao){
+        this.identificacao = identificacao;
+    }
+     
+    public void setPreco(double preco){
+        this.preco = preco;
+    }
+    
+    //inicio dos metodos getters
+    
+    public int getNumeroPassageiros (){
+        return numeroPassageiros;
+    } 
+    
+    public int getVelocidadeMaxima(){
+        return velocidadeMaxima;
+    }
+    
+    public String getMarca(){
+        return marca;
+    }
+    
+    public String getModelo(){
+        return modelo;
+    }
+    
+    public String getIdentificacao(){
+        return identificacao;
+    }
+        
+    public double getPreco(){
+        return preco;
+    }
+    
+
 
 
 public void cadastrar(){
@@ -61,13 +91,7 @@ public void cadastrar(){
 
 }
 
-public void freiar(){
 
-
-}
-
-
-
-}
-
+    
+    
 }
