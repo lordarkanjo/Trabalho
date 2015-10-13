@@ -1,1 +1,69 @@
+package Classes;
 
+/**
+ *
+ * @author Leandro de oliveira antas
+ */
+public class Lancha extends Veiculo{
+    
+protected String tipoCasco;
+
+protected boolean banheiro;
+
+
+//construtores
+
+
+
+
+//Inicio dos métodos setter
+public void setTipoCasco(String tipoCasco){
+    this.tipoCasco = tipoCasco;
+}
+
+public void setBanheiro(boolean banheiro){
+    this.banheiro = banheiro;
+}
+
+//inicio dos métodos getters
+public String getTipoCasco(){
+    return tipoCasco;
+}
+
+public boolean getBanheiro(){
+    return banheiro;
+}
+
+
+
+
+
+//inicio dos métodos da classe
+@Override
+public void cadastrar(){
+    super.cadastrar();
+    
+}
+
+
+public void imprimir(){
+    System.out.println("Marca:" + getMarca() +
+                       "\n Modelo:" + getModelo() +
+                       "\n Identificacao:" + getIdentificacao() +
+                       "\n Numero de passaheiros" + getNumeroPassageiros() +
+                       "\n Velocidade maxima:" + getVelocidadeMaxima() +
+                       "\n Tipo Casco:" + getTipoCasco() +
+                       "\n Banheiro:" + getBanheiro() +
+                       "\n Preco:" + getPreco() 
+                      );    
+}
+
+public double ValorDesconto(){//8% de desconto fixo
+    
+    return getPreco() - getPreco()*0.10;
+}
+
+
+
+
+}
